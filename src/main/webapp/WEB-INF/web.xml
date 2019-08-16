@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>com.fdm.blogsite.servlets.IndexServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>com.fdm.blogsite.servlets.HomeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.fdm.blogsite.servlets.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeletePost</servlet-name>
+		<servlet-class>com.fdm.blogsite.servlets.DeletePostServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeletePost</servlet-name>
+		<url-pattern>/deletePost</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PostServlet</servlet-name>
+		<servlet-class>com.fdm.blogsite.servlets.PostServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostServlet</servlet-name>
+		<url-pattern>/post</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddPostServlet</servlet-name>
+		<servlet-class>com.fdm.blogsite.servlets.AddPostServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddPostServlet</servlet-name>
+		<url-pattern>/addPost</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>FinishAddPostServlet</servlet-name>
+		<servlet-class>com.fdm.blogsite.servlets.FinishAddPostServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FinishAddPostServlet</servlet-name>
+		<url-pattern>/finishAddPost</url-pattern>
+	</servlet-mapping>
+	
+
+	<listener>
+		<listener-class>com.fdm.blogsite.listener.Listener</listener-class>
+	</listener>
+</web-app>
